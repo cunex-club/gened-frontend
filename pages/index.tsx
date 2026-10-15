@@ -1,9 +1,19 @@
 import { Geist } from "next/font/google";
 
-const geist = Geist();
-
 const LandingPage = () => {
-  return <div className={geist.className}>Hello, CU-NEX!</div>;
+  return (
+    <div className="m-4">
+      <div className="p-4 bg-surface rounded-xl">
+        <h1 className="font-bold text-3xl">Hello, CU-NEX!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
+          nostrum reprehenderit deserunt ullam molestiae minus earum magni, est
+          culpa necessitatibus facere tempora itaque soluta quaerat delectus,
+          officia temporibus perferendis inventore!
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default LandingPage;
