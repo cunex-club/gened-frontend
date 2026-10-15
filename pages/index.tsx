@@ -2,7 +2,7 @@ import { Geist } from "next/font/google";
 
 const LandingPage = () => {
   return (
-    <div className="m-4">
+    <div className="m-2 md:m-4">
       <div className="p-4 bg-surface rounded-xl">
         <h1 className="font-bold text-3xl">Hello, CU-NEX!</h1>
         <p>
