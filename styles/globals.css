@@ -15,7 +15,7 @@
 * {
   font-family: "Sarabun Chula", sans-serif;
 
-  @apply text-lg text-foreground leading-[1.2]
+  @apply text-lg text-foreground leading-none
 }
 
 body {
