@@ -3,7 +3,7 @@
 
 @theme {
   /* Colors */
-  --color-primary: #e26385;
+  --color-primary: #f55885;
   --color-primary-variant: #fce8ee;
   --color-chip: #ededed;
   --color-foreground: #000000;
@@ -40,12 +40,8 @@
   --shadow-cunex: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
 }
 
-* {
-  @apply text-foreground leading-none font-body;
-}
-
 body {
-  @apply bg-background;
+  @apply bg-background text-foreground leading-none font-body;
 }
 
 h1, h2, h3, h4, h5, h6 {
