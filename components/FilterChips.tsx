@@ -12,7 +12,7 @@ type FilterChipsProps = {
   "aria-label"?: string;
 };
 
-// Multi-choice group laid out in 3 columns. Each option is a native checkbox.
+// Multi-choice group in 3 columns, dropping to 2 on narrow screens. Each option is a native checkbox.
 const FilterChips = ({
   options,
   value,
@@ -31,7 +31,7 @@ const FilterChips = ({
     <div
       role="group"
       aria-label={ariaLabel}
-      className="grid grid-cols-[repeat(3,110px)] gap-x-[7px] gap-y-1.5"
+      className="grid max-w-[344px] grid-cols-[repeat(auto-fill,minmax(110px,1fr))] gap-x-[7px] gap-y-1.5"
     >
       {options.map((option) => {
         const checked = value.includes(option.value);
